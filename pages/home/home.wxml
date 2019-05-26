@@ -1,0 +1,53 @@
+<!--pages/home/home.wxml-->
+<view style='height: {{deviceHeight + "px"}};overflow: scroll;{{isShow?"position: fixed;left: 30rpx":""}} '>
+  <view class='intro'>
+    <text class='intro-title'>配速</text>
+    <icon type='info' color='' bindtap='showInfo'></icon>
+    <!-- <text class='intro-text'>
+    配速是在马拉松训练中经常用到的一个概念，是速度的一种，是指每公里所需要的时间。马拉松运动讲究匀速，这样才能更好的发挥出自己的实力。作为一个马拉松跑者，控制自己的配速是必修课。他能让你以最好的状态PB，以最安全的状态完赛。完整输入下面任意两项即可算出另外一项。
+    </text> -->
+    <!-- <text class='intro-notice'>由于忽略秒后面小数，所以会有些许误差。</text> -->
+  </view>
+  <view class='fast-select'>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}" wx:key="item.id">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />
+        {{item.value}}
+      </label>
+    </radio-group>
+  </view>
+  <view class='item-distance'>
+    <text>距离：</text>
+    <input type='digit' value='{{distance}}' bindblur='inputDistanch'></input>
+    <text>公里</text>
+  </view>
+  <view class='item-time'>
+    <text>时间：</text>
+    <input type='digit' value='{{timeHour}}' bindblur='inputTimeHour'></input>
+    <text>时</text>
+    <input type='digit' value='{{timeMinute}}' bindblur='inputTimeMinute'></input>
+    <text>分</text>
+    <input type='digit' value='{{timeSecond}}' bindblur='inputTimeSecond'></input>
+    <text>秒</text>
+  </view>
+  <view class='item-speed'>
+    <text>配速：</text>
+    <input type='digit' value='{{speedMinute}}' bindblur='inputSpeedMinute'></input>
+    <text>分</text>
+    <input type='digit' value='{{speedSecond}}' bindblur='inputSpeedSecond'></input>
+    <text>秒/公里</text>
+  </view>
+  <view class='btn-wrap'>
+    <view class='btn btn-primary' hover-class='btn-primary-hover' bindtap='caculate'>计算</view>
+    <view class='btn btn-disable' hover-class='btn-primary-hover' bindtap='reset'>重置</view>
+  </view>
+
+</view>
+
+  <view class='mask' wx:if="{{isShow}}" bindtap='hideMask' catchtouchmove="preventTouchMove">
+    <view class='content-wrap'>
+      <text class='content-info'>
+        配速是在马拉松训练中经常用到的一个概念，是速度的一种，是指每公里所需要的时间。马拉松运动讲究匀速，这样才能更好的发挥出自己的实力。作为一个马拉松跑者，控制自己的配速是必修课。它能让你以最好的状态PB，以最安全的状态完赛。完整输入下面任意两项即可算出另外一项。
+      </text>
+    </view>
+  </view>

@@ -1,0 +1,76 @@
+/* pages/home/home.wxss */
+input {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.item-distance,
+.item-time,
+.item-speed {
+  display: flex;
+  width: 690rpx;
+  margin: 40rpx auto;
+}
+.item-distance input {
+  width: 200rpx;
+}
+.item-time input {
+  width: 100rpx;
+}
+.item-speed input {
+  width: 100rpx;
+}
+/* 介绍样式 */
+.intro {
+  width: 690rpx;
+  padding: 30rpx 0;
+  margin: 0 auto;
+
+}
+.intro .intro-title {
+  font-weight: 800;
+  margin: 40rpx 0;
+  margin-right: 20rpx
+}
+.intro .intro-text {
+  font-size: 26rpx;
+  line-height: 26rpx;
+  text-indent: 52rpx;
+}
+.intro .intro-notice {
+  color: #f00;
+  font-size: 24rpx;
+}
+/* 遮罩层 */
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mask .content-wrap {
+  width: 500rpx;
+  height: 400rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+  padding: 20rpx;
+  border-radius: 8rpx;
+}
+.mask .content-wrap .content-info {
+  line-height: 26rpx;
+  text-indent: 52rpx;
+}
+/* 快捷选项 */
+.fast-select {
+  margin: 20rpx auto;
+  font-size: 26rpx;
+}
+.fast-select .radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

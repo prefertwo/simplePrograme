@@ -1,0 +1,46 @@
+/* 按钮样式 */
+.btn,
+.btn-xl,
+.btn-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  margin: 0 auto;
+  border-radius: 8rpx;
+}
+.btn {
+  width: 690rpx;
+  background-color: #f5f5f5;
+  color: #666;
+  margin-bottom: 40rpx;
+}
+.btn-xl {
+  width: 320rpx;
+}
+.btn-l {
+  width: 160rpx;
+}
+.btn.btn-primary,
+.btn-xl.btn-primary,
+.btn-l.btn-primary {
+  background-color: #7B68EE;
+  color: #fff;
+}
+.btn.btn-warning,
+.btn-xl.btn-warning,
+.btn-l.btn-warning {
+  background-color: #f00;
+  color: #fff;
+}
+.btn.btn-disable,
+.btn-xl.btn-disable
+.btn-l.btn-disable {
+  background-color: #ccc;
+  color: #fff;
+}
+/* btn-hover */
+.btn.btn-primary.btn-primary-hover {
+  background: rgba(123,104,238, .8);
+  color: #fff;
+}
