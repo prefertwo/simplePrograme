@@ -1,4 +1,5 @@
 //app.js
+// appSecret: b8f17d8f7219a2a4e89e34b06d57b67a
 App({
   onLaunch: function () {
     // 展示本地存储能力

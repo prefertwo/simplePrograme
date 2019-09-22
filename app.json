@@ -1,13 +1,22 @@
 {
   "pages": [
-    "pages/home/home",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/keep/index/index",
+    "pages/keep/template/cause/cause",
+    "pages/keep/template/hot/hot",
+    "pages/keep/template/mine/mine",
+    "pages/keep/template/more/more"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f00",
     "navigationBarTitleText": "配速计算器",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxb08dd050fd02929d"
+  ],
+  "sitemapLocation": "sitemap.json"
 }

@@ -2,6 +2,9 @@
 @import './common/weui.wxss';
 @import './common/index.wxss';
 
+.container view {
+  display: flex;
+}
 .container {
   display: flex;
   flex-direction: column;
