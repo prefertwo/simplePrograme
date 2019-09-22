@@ -1,6 +1,6 @@
-# 配速测一测小程序 -- 持续完善中
-![小程序码]( /static/images/programCode.png  "小程序" )
+# 小程序开发 -- 持续完善中
 
-## 第一阶段只有配速计算
+<!-- ![alt 小程序码](/static/images/programCode.png "小程序") -->
+<img src="/static/images/programCode.png" width="50%" />
 
-## 第二阶段将会补充单位转换
+### 第一部分，计算配速
