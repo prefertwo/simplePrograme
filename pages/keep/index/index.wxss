@@ -1,0 +1,67 @@
+/* pages/keep/index/index.wxss */
+@import '/common/keep.wxss';
+
+/* 主要内容区 */
+
+.content {
+  flex: 1;
+  overflow: scroll;
+  /* background-color: #0f0; */
+}
+
+/* 最下TabBar样式 */
+
+.tab-bar {
+  width: 100%;
+  padding: 20rpx 0;
+  justify-content: space-around;
+  border-top: #cecece solid 1px;
+}
+
+.tab-bar .tab-bar-item {
+  /* flex: 1; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-bar image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+/* 我的 */
+.mine {
+  width: 100%;
+  flex: 1;
+  overflow: scroll;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.mine .dynamic-wrap {
+  flex: 1;
+  overflow: scroll;
+}
+.mine .dynamic-list {
+  flex-direction: column;
+}
+.mine .list {
+  padding: 20rpx 0;
+  flex-direction: column;
+}
+.mine .list .list-title {
+  align-items: center;
+}
+.mine .list .avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.mine .list .title-name {
+  flex-direction: column;
+}
+.mine .list .list-actions image {
+  width: 40rpx;
+  height: 40rpx;
+}

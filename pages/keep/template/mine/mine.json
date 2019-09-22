@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "dynamic-item": "/pages/keep/components/Dynamic/Dynamic"
+  }
+}

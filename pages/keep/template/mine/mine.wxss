@@ -1,0 +1,4 @@
+/* pages/keep/template/mine/mine.wxss */
+.mine {
+  flex-direction: column;
+}

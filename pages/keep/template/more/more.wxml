@@ -1,0 +1,4 @@
+<!--pages/keep/template/more/more.wxml-->
+<template name="more">
+  <view>这是更多模板板</view>
+</template>

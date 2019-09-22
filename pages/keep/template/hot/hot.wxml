@@ -1,0 +1,4 @@
+<!--pages/keep/template/hot/hot.wxml-->
+<template name="hot">
+  <view>这是热门模板</view>
+</template>

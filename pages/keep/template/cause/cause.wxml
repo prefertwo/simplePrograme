@@ -1,0 +1,9 @@
+<!--pages/keep/template/cause/cause.wxml-->
+<template name="cause">
+  <view class="cause">
+    <view>课程这里</view>
+
+    
+    
+  </view>
+</template>

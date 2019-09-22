@@ -1,0 +1,45 @@
+<!--pages/keep/template/mine/mine.wxml-->
+<template name="mine">
+  <view class="mine">
+    <view>人物信息</view>
+
+    <view class="dynamic-wrap">
+      <view class="dynamic-list">
+        <view class="list" wx:for="{{dynamics}}" wx:key="{{item.id}}">
+          <view class="list-title">
+            <view>
+              <image class="avatar" src="{{item.avatar || '/static/images/avatar.jpg'}}"></image>
+            </view>
+            <view class="title-name">
+              <text class="name">{{item.name + item.id}}</text>
+              <text class="time">{{item.time}}</text>
+            </view>
+          </view>
+          <view class="list-content">{{item.content}}</view>
+          <view class="list-cause">
+            完成
+            <text class="cause">{{item.project}}</text> 第{{item.times}}次
+          </view>
+          <view class="list-actions">
+            <view>
+              <image src="/static/icons/laba.png"></image>
+              <text>{{item.encourage}}</text>
+            </view>
+            <view>
+              <image src="/static/icons/comment.png"></image>
+              <text>{{item.comment}}</text>
+            </view>
+            <view>
+              <image src="/static/icons/collect.png"></image>
+              <text>{{item.like}}</text>
+            </view><view>
+              <image src="/static/icons/share.png"></image>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</template>

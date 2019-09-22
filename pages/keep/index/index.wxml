@@ -1,0 +1,34 @@
+<!--pages/keep/index/index.wxml-->
+<import src="../template/cause/cause.wxml" />
+<import src="../template/hot/hot.wxml" />
+<import src="../template/mine/mine.wxml" />
+<import src="../template/more/more.wxml" />
+
+<view class="keep-container">
+
+  <!-- 内容显示区 -->
+  <view class="content">
+    <template is="{{tabTemplate}}" data="{{dynamics}}"> </template>
+  </view>
+
+  <!-- 仿TabBar -->
+  <view class="tab-bar">
+    <view class="tab-bar-item" data-type="cause" bindtap="selectTabbar">
+      <image src="/static/icons/home.png"></image>
+      <text>课程</text>
+    </view>
+    <view class="tab-bar-item" data-type="hot" bindtap="selectTabbar">
+      <image src="/static/icons/hot.png"></image>
+      <text>热门</text>
+    </view>
+    <view class="tab-bar-item" data-type="mine" bindtap="selectTabbar">
+      <image src="/static/icons/mine.png"></image>
+      <text>我的</text>
+    </view>
+    <view class="tab-bar-item" data-type="more" bindtap="selectTabbar">
+      <image src="/static/icons/more.png"></image>
+      <text>更多</text>
+    </view>
+  </view>
+
+</view>
