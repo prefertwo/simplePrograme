@@ -2,7 +2,7 @@
 @import './common/weui.wxss';
 @import './common/index.wxss';
 
-.container view {
+view {
   display: flex;
 }
 .container {
@@ -12,4 +12,4 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}

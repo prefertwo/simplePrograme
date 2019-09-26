@@ -1,0 +1,30 @@
+<!--pages/login/login.wxml-->
+<view class='wrap'>
+  <view class='intro'>
+    <text class='text'>给自己取一个响亮的名字吧</text>
+  </view>
+  <form bindsubmit='handleLogin'>
+    <view class='input-item'>
+      <!-- <image src='../../static/icons/user.png'></image> -->
+      <input type='text' name="username" placeholder='设置账号' value='{{username}}' />
+    </view>
+    <view class='input-item'>
+      <!-- <image src='../../static/icons/pass.png'></image> -->
+      <input type='password' name="password" placeholder='设置密码' value='{{password}}'></input>
+    </view>
+    <view class='input-item'>
+
+      <movable-area class="movable-area" style="background-color: {{x==270?'green':'#ccc'}};color: {{x==270?'#fff':'#333'}} " >
+      {{x==270?'':'按住滑块儿，拖到最右侧'}}
+      <text class='view' style='width: {{xD}}px;text-align: center;'>{{x==270?'验证成功':''}}</text>
+        <movable-view class='movable-view' direction="horizontal" inertia="{{true}}" damping="{{500}}" x="{{x}}" bindtouchend="{{x==270?'':'moveEnd'}}" bindchange="handleMoveChange" disabled="{{x==270?true:false}}" >
+          <image src="/static/icons/{{x==270?'success':'double_right_arrow'}}.png"></image>
+        </movable-view>
+      </movable-area>
+
+
+    </view>
+
+    <button form-type='submit'>登录</button>
+  </form>
+</view>

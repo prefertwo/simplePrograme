@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/keep/index/index",
     "pages/index/index",
     "pages/home/home",
     "pages/logs/logs",
-    "pages/keep/index/index",
     "pages/keep/template/cause/cause",
     "pages/keep/template/hot/hot",
     "pages/keep/template/mine/mine",
-    "pages/keep/template/more/more"
+    "pages/keep/template/more/more",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

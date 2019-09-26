@@ -1,0 +1,63 @@
+/* pages/login/login.wxss */
+/* page {} */
+.wrap {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  width: 100%;
+  padding: 100rpx 0;
+  justify-content: center;
+}
+
+.input-item {
+  width: 600rpx;
+  height: 100rpx;
+  margin: 30rpx 0;
+  /* border: #ccc solid 1px; */
+  /* border-radius: 10rpx; */
+  align-items: center;
+}
+/* .input-item image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 40rpx;
+} */
+.input-item input {
+  width: 100%;
+  height: 90rpx;
+  padding: 0 40rpx;
+  border: #ccc solid 1px;
+  border-radius: 10rpx;
+}
+
+.movable-area {
+  position: relative;
+  width: 690rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 14px;
+  line-height: 60rpx;
+  background-color: #ccc;
+}
+.movable-area .view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60rpx;
+  background-color: green;
+  text-align: center;
+}
+.movable-view {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #fff;
+}
+.movable-view image {
+  width: 60rpx;
+  height: 60rpx;
+}
